@@ -162,11 +162,26 @@ footer
 		right: 0
 		bottom: 0
 		left: auto
+		height: auto
 
-.header .choice__circles
-	display: none
-	width: 60%
-	
+.header__nav-btnClose
+	z-index: 100
+
+.header
+	z-index: 1000
+	.choice__circles
+		display: none
+		width: 60%
+
+@media (max-width: 1425px)
+	.header .choice__circles
+		display: block
+
+@media (max-width: 1146px)
+	.container
+		max-width: 100%
+		padding: 0 18px
+
 @media (max-width: 1023px)
 	height: fit-content
 
@@ -175,7 +190,4 @@ footer
 		display: block
 		width: 100%
 
-@media (max-width: 1425px)
-	.header .choice__circles
-		display: block
 		
