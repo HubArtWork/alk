@@ -1,0 +1,123 @@
+@import "vars"
+
+.treatment
+	&-top
+		background-color: $colorMain
+		padding: 60px 0 40px
+	&-title
+		display: block
+		font-size: 18px
+		line-height: 1.65
+		font-weight: 500
+		color: #fff
+		max-width: 940px
+		margin: 0 auto 40px
+		text-align: center
+	&-row
+		display: flex
+		flex-flow: row wrap
+		margin: 0 -15px
+	&-col
+		width: 33.333%
+		padding: 0 15px 30px
+	&-wrap
+		border: 1px solid #fff
+		border-radius: 20px
+		min-height: 110px
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100%
+		text-align: center
+		padding: 15px
+		font-size: 16px
+		line-height: 1.45
+		font-weight: normal
+		color: #fff
+	&-bottom
+		padding: 100px 0 80px
+		.section-title
+			margin-bottom: 50px
+		img,svg
+			display: block
+			max-width: 952px
+			width: 100%
+			margin: 30px auto 0
+		p
+			font-size: 18px
+			line-height: 1.65
+			font-weight: 300
+			color: #333
+			padding-bottom: 20px
+			margin: 0
+		&-text
+			padding-top: 100px
+
+@media only screen and (max-width : 1060px)
+	.treatment
+		&-top
+			padding: 60px 0 50px
+		&-row
+			margin: 0 -10px
+		&-col
+			padding: 0 10px
+		&-bottom
+			.section-title
+				margin-bottom: 30px
+			&-text
+				padding-top: 50px
+			p
+				font-size: 16px
+
+@media only screen and (max-width : 768px)
+	.treatment
+		&-top
+			padding: 50px 0
+		&-title
+			font-size: 18px
+			margin-bottom: 30px
+		&-col
+			width: 50%
+			padding-bottom: 20px
+		&-bottom
+			padding: 70px 0 50px
+			&-text
+				padding-top: 50px
+
+@media only screen and (max-width : 640px)
+	.treatment
+		&-top
+			padding: 40px 0
+		&-title
+			font-size: 16px
+			margin-bottom: 20px
+			text-align: left
+		&-col
+			width: 100%
+			padding-bottom: 0
+		&-wrap
+			display: block
+			text-align: left
+			border: none
+			border-radius: 0
+			min-height: auto
+			font-weight: 300
+			padding: 0 0 10px 23px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				top: 10px
+				left: 8px
+				width: 4px
+				height: 4px
+				border-radius: 50%
+				background-color: #fff
+		&-bottom
+			text-align: left
+			img,svg
+				margin-top: 20px
+			.section-title
+				margin-bottom: 20px
+			&-text
+				padding-top: 40px

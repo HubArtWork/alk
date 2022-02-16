@@ -1,0 +1,88 @@
+@import "vars"
+
+.therapy
+	padding: 100px 0
+	p
+		line-height: 1.65
+		font-weight: 300
+		padding-bottom: 20px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		padding-top: 36px
+	&-img
+		max-width: 558px
+		width: 100%
+		img,svg
+			display: block
+			border-radius: 30px
+	&-info
+		max-width: 588px
+		width: 100%
+		padding-left: 30px
+	&-tit
+		display: block
+		font-size: 18px
+		line-height: 1.45
+		font-weight: 500
+		color: $colorMain
+		margin: 0 0 15px
+	&-block
+		padding-bottom: 33px
+		margin-bottom: 27px
+		border-bottom: 1px solid $colorMain
+		p
+			line-height: 1.45
+			font-weight: 300
+			color: $colorMain
+			padding: 0
+		&:last-child
+			padding-bottom: 0
+			border: none
+			margin-bottom: 0
+
+@media only screen and (max-width : 1060px)
+	.therapy
+		padding: 70px 0
+		.section-title
+			margin-bottom: 30px
+		p
+			font-size: 16px
+		&-row
+			padding-top: 20px
+		&-img
+			max-width: 484px
+		&-info
+			padding-left: 20px
+
+@media only screen and (max-width : 768px)
+	.therapy
+		&-row
+			display: block
+		&-img,&-info
+			max-width: 100%
+		&-img
+			margin-bottom: 40px
+		&-info
+			max-width: 541px
+			margin: 0 auto
+			padding: 0
+
+@media only screen and (max-width : 640px)
+	.therapy
+		padding: 40px 0 60px
+		.section-title
+			margin-bottom: 20px
+		&-img
+			width: auto
+			max-width: none
+			margin: 0 -10px 30px
+			img,svg
+				border-radius: 0
+		&-block
+			border: none
+			margin: 0
+			padding-bottom: 27px
+		&-sub
+			margin-bottom: 5px

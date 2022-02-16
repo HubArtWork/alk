@@ -1,0 +1,78 @@
+@import "vars"
+
+.firstAidKit
+	padding: 100px 0 70px
+	&-row
+		display: flex
+		flex-flow: row wrap
+		margin: 0 -15px
+	&-col
+		width: 50%
+		padding: 0 15px
+		p,ol
+			font-size: 18px
+			font-weight: 300
+		p
+			padding-bottom: 40px
+	&-list
+		display: flex
+		flex-flow: row wrap
+		margin: 0 -15px
+		li
+			width: 50%
+			padding: 0 15px 30px
+			span
+				display: flex
+				align-items: center
+				justify-content: center
+				min-height: 80px
+				height: 100%
+				padding: 10px 12px
+				text-align: center
+				font-size: 18px
+				line-height: 1.45
+				font-weight: 500
+				color: $colorMain
+				border-radius: 20px
+				background-color: #fff
+				box-shadow: 0px 12.5216px 38.8168px rgba(0, 0, 0, 0.035), 0px 6.6501px 20.6153px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 8.5785px rgba(0, 0, 0, 0.0196802)
+				border: 1px solid $colorMain
+
+@media only screen and (max-width : 1060px)
+	.firstAidKit
+		padding: 70px 0
+		.section-title
+			margin-bottom: 50px
+		&-col
+			width: 100%
+			ol,p
+				font-size: 16px
+			&-wrap
+				max-width: 652px
+				margin: 0 auto
+				padding-bottom: 20px
+
+@media only screen and (max-width : 768px)
+	.firstAidKit
+		.section-title
+			margin-bottom: 40px
+		&-col
+			p
+				padding-bottom: 20px
+		&-list
+			margin: 0 -10px
+			li
+				padding: 0 10px 20px
+
+@media only screen and (max-width : 640px)
+	.firstAidKit
+		.section-title
+			margin-bottom: 30px
+		&-col
+			&-wrap
+				padding-bottom: 10px
+		&-list
+			li
+				width: 100%
+				span
+					min-height: 60px

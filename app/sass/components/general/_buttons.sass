@@ -1,0 +1,32 @@
+@import "vars"
+
+.second-btn
+	display: inline-block
+	font-size: 18px
+	line-height: 26px
+	font-weight: 500
+	color: #333
+	text-transform: uppercase
+	letter-spacing: 0.05em
+	background: linear-gradient(100.68deg, rgba(255, 255, 255, 0) 12.12%, rgba(255, 255, 255, 0.75) 83.83%)
+	border: 1px solid #333
+	border-radius: 15px
+	padding: 16px 58px
+	text-align: center
+	&-white
+		background: none
+		border-color: #fff
+		color: #fff
+	&-red
+		color: #fff
+		background: #EC472E
+		border-color: #EC472E
+
+.button-center
+	text-align: center
+	
+@media only screen and (max-width : 640px)
+	.second-btn
+		font-size: 16px
+		line-height: 20px
+		padding: 17.5px

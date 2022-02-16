@@ -1,0 +1,110 @@
+@import "vars"
+
+.frequent
+	p
+		font-size: 18px
+		line-height: 1.65
+		font-weight: 300
+		color: #333
+		padding-bottom: 20px
+	&-title
+		display: block
+		font-size: 26px
+		line-height: 1.25
+		font-weight: bold
+		color: #EC472E
+		margin: 0 0 20px
+	&-top
+		background-color: #F2F2F2
+		padding: 70px 0 60px
+		.about
+			&-row
+				padding: 30px 0 50px
+			&-info
+				p
+					font-weight: bold
+					color: $colorMain
+	&-action
+		background: #EC472E
+		padding: 128px 0
+		p
+			font-weight: normal
+			color: #fff
+			&:last-child
+				padding-bottom: 0
+	&-row
+		display: flex
+		flex-flow: row wrap
+		align-items: center
+		margin: 0 -15px
+	&-col
+		width: 50%
+		padding: 0 15px
+	&-phone
+		text-align: left
+	&-link
+		display: inline-block
+		padding-left: 108px
+		font-size: 32px
+		line-height: 1.25
+		font-weight: bold
+		color: #fff
+		margin-bottom: 47px
+		position: relative
+		img,svg
+			display: block
+			max-width: 108px
+			position: absolute
+			top: -30px
+			left: 0
+	&-block
+		text-align: center
+		.action-btn
+			color: #333
+	&.frequent-second
+		.frequent-row
+			padding-bottom: 0
+
+@media only screen and (max-width : 1060px)
+	.frequent
+		p
+			font-size: 16px
+		&-title
+			text-align: center
+		&-col
+			width: 100%
+		&-block
+			padding-top: 90px
+		&-phone
+			display: flex
+			align-items: center
+			justify-content: center
+		&-action
+			padding: 70px 0 120px
+
+@media only screen and (max-width : 768px)
+	.frequent
+		&-link
+			font-size: 32px
+		.section-title
+			margin-bottom: 20px
+		&-title
+			font-size: 26px
+			margin-bottom: 40px
+
+@media only screen and (max-width : 640px)
+	.frequent
+		&-action
+			padding: 30px 0 50px
+		&-block
+			padding-top: 30px
+		&-phone
+			margin-bottom: 40px
+		&-link
+			font-size: 30px
+			padding-left: 0
+			margin: 0
+			img,svg
+				display: none
+		&-title
+			font-size: 18px

@@ -1,0 +1,172 @@
+@import "vars"
+
+.medicines
+	&-top
+		padding: 60px 0 85px
+		background: #F2F2F2
+	&-block
+		width: 100%
+		height: 300px
+		position: relative
+		img,svg
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			min-width: 671px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		margin: 0 -15px
+	&-info,&-img
+		padding: 0 15px
+		width: 50%
+	&-info
+		p
+			padding-bottom: 20px
+			&:last-child
+				padding-bottom: 0
+	&-img
+		img,svg
+			display: block
+			border-radius: 30px
+		.second-btn
+			margin-left: 30px
+	&-middle
+		padding: 100px 0
+		.section-title
+			margin-bottom: 40px
+	&-head
+		padding-bottom: 100px
+	p
+		font-size: 18px
+		line-height: 1.65
+		font-weight: 300
+		color: #333
+	&-all
+		display: flex
+		flex-flow: row wrap
+		padding-bottom: 20px
+		margin: 0 -15px
+	&-col
+		width: 33.333%
+		padding: 0 15px 30px
+	&-sub
+		display: block
+		font-size: 18px
+		line-height: 1.45
+		font-weight: bold
+		color: $colorMain
+		margin: 0 0 20px
+	&-wrap
+		display: block
+		min-height: 300px
+		height: 100%
+		padding: 55px 10px 20px
+		background: linear-gradient(162.22deg, #F3F3F3 9.79%, #FFFFFF 92.15%)
+		border-radius: 20px
+		text-align: center
+		box-shadow: 0px 12.5216px 38.8168px rgba(0, 0, 0, 0.035), 0px 6.6501px 20.6153px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 8.5785px rgba(0, 0, 0, 0.0196802)
+	&-bottom
+		padding: 100px 0
+		background: #F2F2F2
+
+@media only screen and (max-width : 1060px)
+	.medicines
+		&-top
+			padding: 60px 0 118px
+			position: relative
+			.medicines
+				&-row
+					display: block
+				&-img,&-info
+					width: 100%
+					.second-btn
+						margin: 40px 0 0
+				&-img
+					text-align: center
+		&-block
+			height: auto
+			position: absolute
+			bottom: -239px
+			left: 45%
+			transform: translate(-50%,0)
+			width: auto
+			img,svg
+				position: static
+				transform: none
+				min-width: auto
+				max-width: 650px
+		&-middle
+			.section-title
+				margin-bottom: 30px
+		&-all
+			margin: 0 -10px
+		&-col
+			width: 50%
+			padding: 0 10px 20px
+			p
+				font-size: 16px
+		&-wrap
+			min-height: 220px
+		&-bottom
+			padding: 72px 0
+
+@media only screen and (max-width : 768px)
+	.medicines
+		&-top
+			padding: 50px 0 97px
+		p
+			font-size: 16px
+		&-block
+			bottom: -150px
+			img,svg
+				max-width: 430px
+		&-img,&-info
+			width: 100%
+		&-bottom
+			padding: 0 0 70px
+			.medicines
+				&-row
+					flex-flow: row wrap
+				&-img
+					order: -1
+					margin-bottom: 30px
+
+@media only screen and (max-width : 640px)
+	.medicines
+		&-top
+			padding: 40px 0 78px
+		&-block
+			left: 50%
+			bottom: -110px
+			img,svg
+				max-width: 310px
+		&-middle
+			padding: 112px 0 70px
+			.section-title
+				margin-bottom: 20px
+		&-head
+			padding-bottom: 65px
+		&-all
+			margin: 0
+		&-col
+			width: 100%
+			padding: 0 0 30px
+		&-wrap
+			min-height: auto
+			text-align: left
+			box-shadow: none
+			background: none
+			padding: 0
+		&-sub
+			font-size: 16px
+			color: #333
+			margin-bottom: 5px
+		&-bottom
+			.medicines-img
+				margin: 0 -10px 30px
+				width: auto
+				img,svg
+					border-radius: 0

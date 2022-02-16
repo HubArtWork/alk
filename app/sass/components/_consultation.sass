@@ -1,0 +1,44 @@
+@import "vars"
+
+.consultation
+	padding: 100px 0 130px
+	&-top
+		text-align: center
+		max-width: 1080px
+		margin: 0 auto
+		padding-bottom: 100px
+		p
+			padding-bottom: 30px
+			font-weight: 300
+	&-phone
+		display: inline-block
+		margin: 35px 0 65px
+		font-size: 32px
+		line-height: 1.25
+		font-weight: bold
+		color: $colorMain
+	.action-btn
+		color: #fff
+		background: linear-gradient(141.17deg, #8EC3D6 12.08%, #436F7F 69.39%)
+		max-width: 754px
+		width: 100%
+	.about-row
+		padding-bottom: 0
+		.section-title
+			color: #EC472E
+			
+@media only screen and (max-width : 768px)
+	.consultation
+		padding: 70px 0 100px
+		&-top
+			padding-bottom: 70px
+		&-phone
+			font-size: 32px
+			margin: 0 0 30px
+		p
+			font-size: 16px
+
+@media only screen and (max-width : 640px)
+	.consultation
+		&-phone
+			font-size: 30px

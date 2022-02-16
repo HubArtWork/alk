@@ -1,0 +1,43 @@
+@import "vars"
+
+.whatToDo
+	background: #F2F2F2
+	padding: 70px 0 120px
+	.about
+		&-row
+			margin-bottom: 0
+			padding: 0
+		&-info
+			p
+				color: $colorMain
+				font-weight: 300
+				b
+					font-weight: 500
+	&.whatToDo-second
+		.about-row
+			p
+				color: #333
+			.second-btn
+				margin-top: 10px
+
+@media only screen and (max-width : 1060px)
+	.whatToDo
+		padding: 45px 0 80px
+		.about
+			&-img
+				display: none
+			&-info
+				width: 100%
+			&-buttons
+				justify-content: center
+
+@media only screen and (max-width : 640px)
+	.whatToDo
+		padding: 40px 0
+		.about
+			&-buttons
+				display: block
+			&-btn
+				width: 100%
+				max-width: 100%
+				padding-bottom: 20px

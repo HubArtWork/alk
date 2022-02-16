@@ -1,0 +1,28 @@
+@import "vars"
+
+.message
+	padding: 100px 0
+	p
+		font-weight: 300
+		line-height: 1.65
+	.section-title
+		text-align: left
+		margin-bottom: 20px
+	&.message-important
+		p,.section-title
+			color: #EC472E
+
+@media only screen and (max-width : 1060px)
+	.message
+		padding: 70px 0
+		p
+			font-size: 16px
+
+@media only screen and (max-width : 768px)
+	.message
+		.section-title
+			font-size: 36px
+
+@media only screen and (max-width : 640px)
+	.message
+		padding: 50px 0

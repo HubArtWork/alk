@@ -1,0 +1,65 @@
+@import "vars"
+
+.discover
+	background-color: $colorMain
+	padding: 70px 0 90px
+	.section-title
+		max-width: 700px
+		margin: 0 auto 35px
+		color: #fff
+	p
+		font-size: 18px
+		line-height: 1.65
+		font-weight: normal
+		color: #fff
+		padding-bottom: 20px
+		b
+			font-weight: 500
+	&-row
+		display: flex
+		flex-flow: row wrap
+		align-items: center
+		padding-top: 20px
+		margin: 0 -15px
+		p
+			font-weight: 300
+		.action-btn
+			margin-top: 15px
+			background: linear-gradient(100.68deg, rgba(255, 255, 255, 0) 12.12%, rgba(255, 255, 255, 0.375) 83.83%)
+			color: #fff
+	&-img,&-info
+		width: 50%
+		padding: 0 15px
+	&-img
+		img,svg
+			display: block
+			border-radius: 30px
+	&-top
+		padding-bottom: 20px
+		p
+			font-weight: 500
+
+@media only screen and (max-width : 1060px)
+	.discover
+		text-align: center
+		p
+			font-size: 16px
+			text-align: left
+		&-img
+			display: none
+		&-info
+			width: 100%
+		.action-btn
+			margin-top: 20px
+
+@media only screen and (max-width : 768px)
+	.discover
+		padding: 50px 0 80px
+		.section-title
+			margin-bottom: 30px
+
+@media only screen and (max-width : 640px)
+	.discover
+		padding: 40px 0 60px
+		&-row
+			padding-top: 10px
